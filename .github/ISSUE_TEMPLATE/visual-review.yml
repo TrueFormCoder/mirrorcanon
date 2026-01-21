@@ -1,0 +1,78 @@
+name: Visual Asset Review
+description: Review and approve a visual asset under MirrorCanon lane governance
+title: "[Visual Review] "
+labels: ["visual", "review"]
+body:
+  - type: dropdown
+    id: lane
+    attributes:
+      label: Lane
+      options:
+        - Public / Access
+        - Mainstream / Press
+        - Scholar / Canon
+        - Institutional / Framework
+    validations:
+      required: true
+
+  - type: dropdown
+    id: grade
+    attributes:
+      label: Reading Grade Target
+      options:
+        - 8–10
+        - 11–12
+        - 13–16
+        - Professional
+    validations:
+      required: true
+
+  - type: input
+    id: asset_path
+    attributes:
+      label: Asset Path
+      placeholder: assets/press/issue001-ambiguity-chair-press-v1.0.png
+    validations:
+      required: true
+
+  - type: textarea
+    id: intent
+    attributes:
+      label: Intended Use
+      description: Where and how this asset will be used
+      placeholder: Issue hero image for press embed
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Governance Checks
+      options:
+        - label: Lane declared and correct
+          required: true
+        - label: Reading grade appropriate for lane
+          required: true
+        - label: No cross-lane reuse
+          required: true
+        - label: Approved symbols only (if applicable)
+          required: true
+        - label: Accent color rules followed
+          required: true
+
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk If Misused
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Reviewer Notes
+      placeholder: Downgrade to Institutional if reused without context

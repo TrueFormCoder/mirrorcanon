@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+
+# Editor state
+.vscode/
+.idea/
+
+# Temp files
+*.tmp
+*.log
+
+# Apple Pages autosave
+*.pages~
