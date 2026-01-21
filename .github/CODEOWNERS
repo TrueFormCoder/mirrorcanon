@@ -1,11 +1,11 @@
 # Global
-* @mirrorcanon-admin
+* @TrueFormCoder
 
-# Visual Assets
-/assets/public-access/ @mirrorcanon-visuals
-/assets/press/ @mirrorcanon-press
-/assets/scholar-canon/ @mirrorcanon-canon
-/assets/institutional-framework/ @mirrorcanon-institutional
+# Assets
+/assets/public-access/ @TrueFormCoder
+/assets/press/ @TrueFormCoder
+/assets/scholar-canon/ @TrueFormCoder
+/assets/institutional-framework/ @TrueFormCoder
 
 # Issues
-/issues/ @mirrorcanon-canon
+/issues/ @TrueFormCoder
