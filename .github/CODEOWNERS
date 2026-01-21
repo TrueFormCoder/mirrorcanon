@@ -1,0 +1,11 @@
+# Global
+* @mirrorcanon-admin
+
+# Visual Assets
+/assets/public-access/ @mirrorcanon-visuals
+/assets/press/ @mirrorcanon-press
+/assets/scholar-canon/ @mirrorcanon-canon
+/assets/institutional-framework/ @mirrorcanon-institutional
+
+# Issues
+/issues/ @mirrorcanon-canon

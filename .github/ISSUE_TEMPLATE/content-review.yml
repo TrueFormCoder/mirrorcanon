@@ -1,0 +1,82 @@
+name: Content Review
+description: Review and approve written content under MirrorCanon lane governance
+title: "[Content Review] "
+labels: ["content", "review"]
+body:
+  - type: dropdown
+    id: lane
+    attributes:
+      label: Lane
+      options:
+        - Public / Access
+        - Mainstream / Press
+        - Scholar / Canon
+        - Institutional / Framework
+    validations:
+      required: true
+
+  - type: dropdown
+    id: grade
+    attributes:
+      label: Reading Grade Target
+      options:
+        - 8–10
+        - 11–12
+        - 13–16
+        - Professional
+    validations:
+      required: true
+
+  - type: input
+    id: content_path
+    attributes:
+      label: Content Path
+      placeholder: issues/issue-001-succession/canon.md
+    validations:
+      required: true
+
+  - type: input
+    id: issue
+    attributes:
+      label: Issue (if applicable)
+      placeholder: issue-001-succession
+
+  - type: textarea
+    id: intent
+    attributes:
+      label: Intended Use
+      description: Where and how this content will be used
+      placeholder: Canon issue release notes for scholar distribution
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Governance Checks
+      options:
+        - label: Lane declared and correct
+          required: true
+        - label: Reading grade appropriate for lane
+          required: true
+        - label: No cross-lane reuse
+          required: true
+        - label: Versioning applied
+          required: true
+
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk If Misused
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Reviewer Notes
+      placeholder: Elevate to Institutional before licensing discussion
